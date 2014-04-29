@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.1'
 gem 'bootstrap-sass', '2.3.2.0'
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'annotate', '~> 2.6.3'
+gem 'devise'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
