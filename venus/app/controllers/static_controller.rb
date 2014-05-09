@@ -1,5 +1,6 @@
 class StaticController < ApplicationController
   def home
-    
-  end
+   # Get all Study Sessions
+   @sessions = StudySession.all
+  end 
 end

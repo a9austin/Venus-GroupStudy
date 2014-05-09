@@ -11,13 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140503064718) do
+ActiveRecord::Schema.define(version: 20140503065115) do
 
   create_table "study_sessions", force: true do |t|
     t.string   "label"
     t.string   "location"
     t.integer  "subject_id"
     t.integer  "university_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subjects", force: true do |t|
+    t.string   "label"
+    t.string   "token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "universities", force: true do |t|
+    t.string   "label"
+    t.string   "token"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
