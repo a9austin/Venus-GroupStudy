@@ -1,0 +1,14 @@
+<h2> New Session </h2>
+<%= form_for(@study_session) do |f| %>
+  <div> <%= f.label :label%> <br />
+  <%= f.text_field :label, :autofocus => true %>
+  </div>
+
+  <div><%= f.label :location%><br />
+  <%= f.text_field :location%></div>
+
+  <div><%= f.label :subject %><br />
+  <%= f.text_field:subject%></div>
+
+  <div><%= f.submit "Create Session" %></div>
+<% end %>
