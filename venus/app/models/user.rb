@@ -24,5 +24,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_one :study_session, dependent: :destroy
-  has_many :subjects, dependent: :destroy
+  has_and_belongs_to_many :subjects
 end
+

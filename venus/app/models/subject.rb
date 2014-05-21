@@ -11,4 +11,5 @@
 
 class Subject < ActiveRecord::Base
   belongs_to :study_session
+  has_and_belongs_to_many :users
 end
